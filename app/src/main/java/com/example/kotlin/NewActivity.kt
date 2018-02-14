@@ -3,6 +3,7 @@ package com.example.kotlin
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
+import kotlinx.android.synthetic.main.activity_new.*
 
 
 /**
@@ -14,6 +15,8 @@ class NewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_new)
+
+        textView.setText("Kotlin, view Binding!");
     }
 
     fun sendMessage(view: View) {
